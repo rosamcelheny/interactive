@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(70,70,101,1) 44%, rgba(250,249,226,1) 100%);
+  font-family: fantasy;
+  height:100vh;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size:120px;
+  border:1px solid purple;
+  line-height:3em;
+  border-radius:50%;
+  box-shadow: 5px 5px 30px #888888;
+}
+
+.css {
+  position:fixed;
+  bottom: 2em;
+  width:50vw;
+  margin-left:30vw;
+}
+
+h2 {
+  display:inline-block;
+  text-align:center;
+  padding:2px;
+  color:cyan;
+}

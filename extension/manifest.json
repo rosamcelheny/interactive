@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Footer",
+  "version": "1.0",
+  "description": "Add a footer to your website!",
+  "content_scripts": [{ 
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["footer.js"],
+    "css": ["styles.css"]
+  }],
+  "web_accessible_resources" : [ 
+    "assets/*" 
+  ] 
+}

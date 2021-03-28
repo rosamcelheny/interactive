@@ -1,0 +1,303 @@
+body {
+  /*text-align: center;*/
+  /*background-color: Black;*/
+  /*color: orange;*/
+  /*background-image: linear-gradient(slateblue, navy);*/
+  background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=ecf05e47h7zchti3h4o35culzkktgzzd7isinftnw7qz3eam&rid=giphy.gif);
+  font-family: helvetica;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 500px;
+  /*border: solid purple;*/
+}
+
+h1 {
+	font-family: helvetica;
+	color: tomato;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: helvetica;
+  color: tomato;
+  /*font-size: 35px;*/
+}
+
+a {
+	color: slateblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: violet;
+  font-size: 35px;
+}
+
+/*#grad {
+	background-image: linear-gradient (to bottom, slateblue, navy);
+  }*/
+
+
+  #box1 {
+    width: 50rem;
+    height: 20rem;
+    border: 0.2rem;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 2px;
+    font: .85rem helvetica;
+    margin: .2rem;
+    padding: .1rem;
+    outline-offset: 0.5rem;
+    display: inline-block;
+    animation-name: colorchangefive;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    background-color: slateblue;
+  }
+
+  #box2 {
+    width: 50rem;
+    height: 20rem;
+    border: 0.2rem;
+    border-style: solid;
+    border-color: tomato;
+    border-radius: 2px;
+    font: .85rem helvetica;
+    margin: .2rem;
+    padding: .1rem;
+    outline-offset: 0.5rem;
+    background-color: slateblue;
+    display: inline-block;
+    animation-name: colorchangetwo;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+
+  #box3 {
+    width: 50rem;
+    height: 20rem;
+    border: 0.2rem;
+    border-style: solid;
+    border-color: tomato;
+    border-radius: 2px;
+    font: .85rem helvetica;
+    margin: .2rem;
+    padding: .1rem;
+    outline-offset: 0.5rem;
+    background-color: slateblue;
+    display: inline-block;
+/*  animation-name: colorchange2;
+animation-duration: 90s;*/
+}
+
+#box4 {
+  width: 200rem;
+  height: 20rem;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: tomato;
+  border-radius: 2px;
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: slateblue;
+/*  background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=ecf05e47h7zchti3h4o35culzkktgzzd7isinftnw7qz3eam&rid=giphy.gif);
+*/  display: inline-block;
+animation-name: colorchangetwo;
+animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+#box5 {
+  width: 50rem;
+  height: 30rem;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: moccasin;
+  border-radius: 2px;
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: navy;
+  display: inline-block;
+  animation-name: colorchangethree;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#box6 {
+  width: 50rem;
+  height: 30rem;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: palegoldenrod;
+  border-radius: 2px;
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: navy;
+  display: inline-block;
+  animation-name: colorchangefour;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#box7 {
+  width: 50rem;
+  height: 30rem;
+  border: 0.2rem;
+  background-image: url(https://media4.giphy.com/media/PEsfxkQjPufXNPAjix/giphy.gif);
+  /*border-style: solid;*/
+  /*border-color: palegoldenrod;*/
+  /*border-radius: 2px;*/
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  /*outline-offset: 0.5rem;*/
+  background-color: navy;
+  display: inline-block;
+  animation-name: colorchangefour;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#box8 {
+  width: 50rem;
+  height: 10rem;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: moccasin;
+  border-radius: 2px;
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: navy;
+  display: inline-block;
+  animation-name: colorchangethree;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#box9 {
+  width: 50rem;
+  height: 10rem;
+  border: 0.2rem;
+  border-style: solid;
+  border-color: palegoldenrod;
+  border-radius: 2px;
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: navy;
+  display: inline-block;
+  animation-name: colorchangefour;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#box10 {
+  width: 50rem;
+  height: 40rem;
+  /*border: 0.2rem;*/
+  /*border-style: solid;*/
+  /*border-color: gold;*/
+  /*border-radius: 2px;*/
+  font: .85rem helvetica;
+  margin: .2rem;
+  padding: .1rem;
+  /*outline-offset: 0.5rem;*/
+  /*background-color: moccasin;*/
+  display: inline-block;
+  align-items: center;
+  animation-name: MoveUpDown;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*animation-duration: 90s;*/
+  /*animation-iteration-count: infinite;*/
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes colorchangetwo {
+	from {background-color: slateblue;}
+	to {background-color: tomato;}
+}
+
+@keyframes colorchangefive {
+	from {background-color: slateblue;}
+	to {background-color: orange;}
+}
+
+@keyframes colorchangethree {
+	from {background-color: slateblue;}
+	to {background-color: moccasin;}
+}
+
+@keyframes colorchangefour {
+	from {background-color: slateblue;}
+	to {background-color: palegoldenrod;}
+}
+
+#ten {
+  animation-duration: .08s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  to {
+    margin-right: 10px;
+    width: 100%;
+  }
+}
+
+#ten2 {
+  animation-duration: .08s;
+  animation-name: slideintwo;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slideintwo {
+  from {
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+.container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: stretch;
+  align-content: center;
+}

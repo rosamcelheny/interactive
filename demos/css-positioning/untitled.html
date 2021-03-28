@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html> 
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+      #credit-line {
+        font-style:italic;
+        font-size: 14px;
+        text-align: center;
+      }
+
+  .hatchback {
+    border-bottom: 2px dashed yellow;
+    font-size: 24px;
+  }
+
+  #favorite {
+    font-family:cursive;
+    background-color:yellow;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: red;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hidden * {
+    display:none;
+  }
+
+  .floating + * {
+    clear: left;
+  }
+
+    </style>
+  </head>
+
+  <body>
+
+.box {
+        border: 1px solid black;
+      }
+      .box:first-of-type {
+        padding: 10px;
+      }
+      .box:nth-of-type(2) {
+        padding: 1em;
+      }
+      .box:nth-of-type(3) {
+        padding:10%;
+      }
+      .box:nth-of-type(4) {
+        padding: 1vw;
+      }
+
+  <div style="font-weight:bold;">
+    Inline styles seem great!
+  </div>
+
+
+  <div class="cars">
+    <div class="hatchback">
+      Volkswagen Rabbit
+    </div>
+    <div class="hatchback">
+      Ford Fiesta
+    </div>
+    <div id="favorite">
+      Acura Legend
+    </div>
+  </div>
+
+  <div id="credit-line">
+    Thank you to my fans, my coach, 
+    my parents, my dog.
+  </div>
+
+  <div style="height: 400px; width: 400px; background-color: yellow; border: 1px solid blue; font-size: orange; font-family: Courier, monospace;">
+    This is getting complicated...
+  </div>
+
+
+    <div class="box">
+      This box has 10px padding.
+    </div>
+    <div class="box">
+      This box has 1em padding.
+    </div>
+    <div class="box">
+      This box has 10% padding.
+    </div>
+    <div class="box">
+      This box has 1vw padding.
+    </div>
+  </div>
+  </body>
+</html>    

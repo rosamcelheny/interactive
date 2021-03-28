@@ -1,0 +1,31 @@
+h1, h2 {
+  text-align:center;
+}
+.shelf .book {
+  display:inline-block;
+  height:450px;
+  width:150px;
+  vertical-align: top;
+  border:1px solid black;
+}
+.book > h1 {
+  font-size:1.5em;
+  font-style:italic;
+}
+.title+h1 {
+  font-size:1em;
+  color:gray;
+  font-style:normal;
+}
+h1~h2 {
+  font-size:0.75em;
+}
+.stripe {
+  background-color:lightgreen;
+}
+.intro {
+  width:600px;
+}
+.book:nth-of-type(odd) {
+  background-color:lightcyan;
+}

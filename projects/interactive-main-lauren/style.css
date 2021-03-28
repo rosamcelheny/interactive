@@ -1,0 +1,106 @@
+/*CSS Style Sheet — Lauren*/
+
+body {
+  /*text-align: center;*/
+  background-color: Black;
+  color: azure;
+  font-family: Monaco;
+  padding-left: 150px;
+  padding-top: 100px;
+  padding-right: 150px;
+  padding-bottom: 500px;
+  /*border: solid purple;*/
+}
+h1 {
+  color: MediumOrchid;
+  font-family: Monaco;
+}
+
+h2 {
+  color: MediumOrchid;
+  font-family: Monaco;
+}
+
+a {
+  color: azure;
+  font-family: Monaco;
+}
+
+p {
+  color: azure;
+  font-family: Monaco;
+}
+
+ol {
+	  font-family: Monaco;
+	  color: azure;
+}
+
+a:hover {
+	color: chocolate;
+}
+
+#box {
+  border: 0.3rem outset MediumOrchid;
+  /*outline: 0.5rem solid khaki;*/
+  /*box-shadow: 0 0 0 2rem skyblue;*/
+  border-radius: 3px;
+  font: 1rem Didot;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  background-color: Black;
+  padding-left: 70px;
+  padding-right: 50 px;
+}
+
+#box3 {
+  width: 1000px;
+  height: 30px;
+  border: 0.3rem outset MediumOrchid;
+  /*outline: 0.5rem solid khaki;*/
+  /*box-shadow: 0 0 0 2rem skyblue;*/
+  border-radius: 3px;
+  font: 1rem Didot;
+  margin: 1rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: Black;
+  /*padding-left: 50px;*/
+  /*padding-right: 50 px;*/
+}
+
+#box2 {
+  width: 120px;
+  height: 80px;
+  border: 0.2rem outset SpringGreen;
+  /*outline: 0.5rem solid khaki;*/
+  /*box-shadow: 0 0 0 2rem skyblue;*/
+  border-radius: 3px;
+  font: 1rem Didot;
+  margin: .2rem;
+  padding: .1rem;
+  outline-offset: 0.5rem;
+  background-color: Black;
+  display: inline-block;
+
+  /*padding-left: 70px;*/
+  /*padding-right: 50 px;*/
+}
+
+.container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: stretch;
+  align-content: center;
+}
+
+/*div {
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  background-color: Black;
+  padding-left: 70px;
+  padding-right: 50 px;
+}*/

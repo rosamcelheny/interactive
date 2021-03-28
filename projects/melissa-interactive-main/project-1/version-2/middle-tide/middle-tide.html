@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>middle tide</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <style>
+      body {
+/*        background-image: url(../underwater.jpg);
+        background-size: cover;*/
+        background-image: linear-gradient(180deg, rgba(210,245,246,1) 0%, rgba(10,47,77,1) 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        margin: 60px;
+      }
+      .column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row
+        margin: 20px 20px 0;
+        padding: 20px;
+        border: none;
+      }
+/*      .column:last-child {
+        padding-bottom: 60px;
+      }
+      .column::after {
+        content: '';
+        clear: both;
+        display: block;
+      }*/
+/*      .column div {
+        position: relative;
+        float: right;
+        width: 500px;
+        height: 312px;
+        margin: 0 0 0 25px;
+        padding: 0;
+      }
+      .column div:first-child {
+        margin-left: 0;
+      }*/
+      .column div span {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        transition: .5s ease-in-out;
+        opacity: 0;
+      }
+      figure {
+        width: 500px;
+        height: 312px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+      }
+      figure:hover+span {
+        bottom: -36px;
+        opacity: 1;
+      }
+      .hover07 div {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        transition: .5s ease-in-out;
+      }
+      .hover07 div:hover {
+        filter: blur(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 id="demo07">middle tide</h2>
+    <div class="hover07 column">
+      <div>
+        <figure><img src="images/bent-nosed_clam.jpg"/> </figure>
+        <span>bent-nosed clam</span>
+      </div>
+      <div>
+        <figure><img src="images/brooding_anemone.jpg"/> </figure>
+        <span>brooding anemone</span>
+      </div>
+      <div>
+        <figure><img src="images/encrusting_bryozoa.jpg"/> </figure>
+        <span>encrusting bryozoa</span>
+      </div>
+      <div>
+        <figure><img src="images/finger_limpet.jpg"/> </figure>
+        <span>finger limpet</span>
+      </div>
+      <div>
+        <figure><img src="images/littleneck_clam.jpg"/> </figure>
+        <span>littleneck clam</span>
+      </div>
+      <div>
+        <figure><img src="images/pink-tipped_green_anemone.jpg"/> </figure>
+        <span>pink-tipped green anemone</span>
+      </div>
+      <div>
+        <figure><img src="images/plate_limpet.jpg"/> </figure>
+        <span>plate limpet</span>
+      </div>
+      <div>
+        <figure><img src="images/scale_worm.jpg"/> </figure>
+        <span>scale worm</span>
+      </div>  
+      <div>
+        <figure><img src="images/sea_lichen.jpg"/> </figure>
+        <span>sea lichen</span>
+      </div> 
+      <div>
+        <figure><img src="images/snail_worms.jpg"/> </figure>
+        <span>snail worms</span>
+      </div> 
+    </div>
+  </body>
+</html>   
