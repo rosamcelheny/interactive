@@ -1,0 +1,51 @@
+body {
+  margin: 1em;
+}
+p {
+  /*width: 450px;*/
+  /*font-size: 2rem;*/
+}
+code {
+  font-size: 1.1em;
+  color: blue;
+}
+
+div {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  /*animation-delay: 1s;*/
+  background-color: blue;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  line-height: 350px;
+  color: lime;
+}
+
+div:first-of-type {
+  animation-iteration-count: 1;
+
+}
+div:nth-of-type(2) {
+  animation-iteration-count: 4;
+  background-color: indigo;
+}
+div:nth-of-type(3) {
+  animation-iteration-count: infinite;
+  background-color: black;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
+}

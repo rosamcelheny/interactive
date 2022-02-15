@@ -1,0 +1,51 @@
+
+
+
+
+
+body {
+  margin: 1em;
+}
+p {
+  width: 450px;
+}
+code {
+  font-size: 1.1em;
+  color: blue;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  line-height: 350px;
+  color: black;
+  cursor: pointer;
+}
+
+div {
+  animation-name: color-change;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: yellow;
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: yellow;
+    color: black;
+  }
+  100% {
+    background-color: darkmagenta;
+    color: white;
+  }
+}

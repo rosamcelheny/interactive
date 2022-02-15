@@ -1,0 +1,54 @@
+body {
+  margin: 1em;
+}
+p {
+  /*width: 450px;*/
+  /*font-size: 2rem;*/
+}
+code {
+  font-size: 1.1em;
+  color: blue;
+}
+
+section {
+  display: inline-block;
+  width: 20vw;
+  margin-right: 1em;
+}
+div {
+  animation-name: shrink;
+  animation-duration: 5s;
+  /*animation-iteration-count: infinite;*/
+  animation-delay: 1s;
+  background-color: blue;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+}
+
+@keyframes shrink {
+  0% {
+    width: 20vw;
+    height: 20vw;
+  }
+  10% {
+    width: 21vw;
+    height: 21vw;
+  }
+  100% {
+    width: 0vw;
+    height: 0vw;
+  }
+}
+
+div:nth-of-type(2) {
+  animation-timing-function: ease-in;
+}
+
+div:nth-of-type(3) {
+  animation-timing-function: ease-out;
+}
+
+div:nth-of-type(4) {
+  animation-timing-function: ease-in-out;
+}

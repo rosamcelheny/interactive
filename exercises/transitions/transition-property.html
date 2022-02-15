@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transition property</title>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="transition-property.css">
+       <style>
+      body {
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>By default, all properties of an element will be affected by a transition.
+      Here, <code>background-color</code>, <code>letter-spacing</code>, and <code>border-radius</code> all animate on hover.</p>
+    <button class="property">Click me!</button>
+    <p>Use <code>transition-property</code> to specify only certain properties. Here, only <code>border-radius</code> is animated. <code>letter-spacing</code> and <code>background-color</code> both change, but with a jump-cut.</p>
+    <button class="property fade">Click me!</button>
+  </body>
+</html>
