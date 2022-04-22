@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles_2.css">
+    </head>
+    <body>
+        <div class="container" id="questions_wrapper">
+            <div class="question first">
+                <div id="number3">
+                    Question #3 shorter sit amet?
+                </div>
+            </div>
+            <div class="question">
+                <div id="number1">
+                    Question #1 lorem ipsum dolor sit amet?
+                </div>
+            </div>
+
+            <div class="question">
+                <div id="number2">
+                    Question #2 slightly longer lorem ipsum dolor sit amet?
+                </div>
+            </div>
+
+            <div class="question last">
+                <div id="number3">
+                    Question #3 shorter sit amet?
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+
+            const questions = document.querySelectorAll('.question');
+
+            var questions_list = $(".container").html();
+            console.log(questions_list);
+
+            questions.forEach(question => {
+
+                question.addEventListener('click', function(event) {
+                    var target_question = event.target;
+                    console.log(target_question);
+                    
+                        if (target_question.classList.contains("first")) {
+                            console.log("first");
+                            target_question.scrollIntoView({behavior: "smooth", block: "center"});
+                            $(".container").prepend(questions_list);
+                        } 
+                        else if (target_question.classList.contains("last")) {
+                            console.log("last");
+                            target_question.scrollIntoView({behavior: "smooth", block: "center"});
+                            $(".container").append(questions_list);
+                        } else {
+                            target_question.scrollIntoView({behavior: "smooth", block: "center"});
+
+                        }
+                    });
+                });
+           
+        </script>
+    </body>
+</html>

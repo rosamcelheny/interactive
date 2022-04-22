@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles_2.css">
+    </head>
+    <body>
+        <div class="container" id="questions_wrapper">
+            <div class="question " onclick="myScroll()">
+                <div>
+                    Question #1 lorem ipsum dolor sit amet?
+                </div>
+            </div>
+            <div class="question first" onclick="myScroll()">
+                <div>
+                    Question #2 slightly longer lorem ipsum dolor sit amet?
+                </div>
+            </div>
+            <div class="question last" onclick="myScroll()">
+                <div>
+                    Question #3 shorter sit amet?
+                </div>
+            </div>
+            <div class="question" onclick="myScroll()">
+                <div>
+                    Question #4 shorter sit amet?
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+
+            var questions_list = $(".container").html();
+            console.log(questions_list);
+
+            function myScroll() {
+                console.log('click');
+                var target_question = event.target;
+                target_question.scrollIntoView({behavior: "smooth", block: "center"}); 
+            }
+
+            $(".last").click(function() {
+                $(".container").append(questions_list);
+                // $(".question:last-of-type").after(questions_list);
+                console.log("last")
+            })
+
+            // $(".first").click(function() {
+            //     $(".container").prepend(questions_list);
+            //     $(this).removeClass("first");
+            //     console.log("first")
+            // })
+
+
+        </script>
+    </body>
+</html>

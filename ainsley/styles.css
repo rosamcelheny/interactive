@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+  display: block;
+  margin: 5px;
+  margin-top: -25vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper:hover {
+  background-color: greenyellow;
+}
+div {
+    height: 50vh;
+    border:  1px solid blue;
+    line-height: 50vh;
+    font-size: 100px;
+    /*margin: 100px;*/
+}

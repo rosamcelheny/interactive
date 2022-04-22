@@ -1,0 +1,18 @@
+* {
+  font-size: 100px;
+}
+
+.question{
+  border: 1px solid red;
+  display: block;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.question:hover {
+  background-color: seagreen;
+}
+
+.question div {
+  pointer-events: none;
+}

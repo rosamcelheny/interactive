@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Images</title>
+    <style>
+      #flower {
+        position:absolute;
+        top: 500px;
+        left: 600px;
+        width: 250px;
+        transform: rotate(20deg);
+        opacity: 0;
+        animation-name: appear;
+        animation-duration: 100ms;
+        animation-fill-mode: forwards;
+      }
+      #seaweed {
+        width: 300px;
+        position:absolute;
+        left: 200px;
+        top: 100px;
+        transform: rotate(-20deg);
+        opacity: 0;
+        animation-name: appear;
+        animation-duration: 100ms;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+      }
+      #fern {
+        position:absolute;
+        top: 200px;
+        left: 300px;
+        transform: rotate(15deg);
+        opacity: 0;
+        animation-name: appear;
+        /*animation-duration controls the speed of the fade in*/
+        animation-duration: 100ms;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+      }
+
+      /*define the animation*/
+      @keyframes appear {
+        /*initial state*/
+        0% {
+          opacity: 0;
+        }
+        /*end state*/
+        100% {
+          opacity: 1;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <img src="images/image01.jpg" id="flower">
+    <img src="images/image03.jpg" id="fern">
+    <img src="images/image02.jpg" id="seaweed">
+  </body>
+</html>
+
+    
+    
+    
+
+
+      

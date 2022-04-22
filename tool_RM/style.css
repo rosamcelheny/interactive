@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    
+    font-size:28px;
+    
+    font-family: 'Londrina Outline', cursive;
+}
+
+.info, .caption, .welcome {
+    color:white;
+    
+}
+
+.caption {
+    position:absolute;
+    z-index:3;
+    font-size: 2em;
+    
+    mix-blend-mode:overlay;
+    
+    transition: 1s;
+    
+    text-shadow:
+   -1px -1px 0 blue,  
+    1px -1px 0 blue,
+    -1px 1px 0 blue,
+     1px 1px 0 blue;
+    filter: url("#turbulence");
+    
+}
+
+.info, .welcome {
+    position:fixed;
+    z-index:5;
+    left:0;
+    right:0;
+    margin:auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.info {
+    width:600px;
+    max-width:80vw;
+    
+    font-size:1.5em;
+    
+    visibility:hidden;
+    opacity:0;
+    
+}
+
+.welcome {
+    width:600px;
+    max-width:80vw;
+    font-size:1.5em;
+    transition:2s;
+}
+
+/*must do this .bg + .bg_wrapper thing so that .bg can rotate animate without showing its edges/white body bg*/
+.bg_wrapper {
+    width:500vw;
+    height:500vh;
+    overflow:hidden;
+}
+
+/*rotating, moving sea bg*/
+.bg {
+    position: relative;
+    width: 1000vw;
+    height: 1000vh;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(72,104,255,1) 6%, rgba(84,176,221,1) 12%, rgba(95,137,255,1) 20%, rgba(28,249,255,1) 27%, rgba(19,66,182,1) 36%, rgba(0,212,255,1) 43%, rgba(0,255,209,1) 48%, rgba(2,3,186,1) 53%, rgba(157,240,255,1) 57%, rgba(136,160,236,1) 63%, rgba(55,45,255,1) 70%, rgba(39,231,223,1) 78%, rgba(24,55,255,1) 91%, rgba(9,9,121,1) 100%);
+    background-size:1000vw 1000vh;
+
+/*    animation: rotate 15s linear infinite alternate-reverse, gradient 10s ease infinite;*/
+    
+}
+
+
+@keyframes rotate {
+      0% {transform: rotate(0deg); } 
+      25% {transform: rotate(30deg); } 
+      50% {transform: rotate(0deg); } 
+      100% {transform: rotate(-30deg); } 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0vw 400vh;
+	}
+	50% {
+		background-position: 0vw 180vh;
+	}
+	100% {
+		background-position: 0vw 400vh;
+	}
+}
+
+/*invisible hitbox for jquery mouseenter*/
+.critter {
+    width:400px;
+    height: 400px;
+    position:absolute;
+    z-index:4;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+    /*
+    animation: swimming 20s linear infinite, bounce 3s linear infinite;
+    animation-delay: 5s;
+    */
+    transition: 1s;
+    
+}
+
+img {
+    width:100px;
+    transition: 1s;
+    /*filter:blur(10px);*/
+}
+
+img:hover {
+    cursor:grab;
+}
+
+
+.funebris {
+    left:-10%;
+}
+
+
+
+/*
+@keyframes swimming {
+    0% {
+        left:-10%;
+    }
+    
+    100% {
+        left:120%;
+    }
+}
+
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  75% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+*/
+/*
+
+.displacement {
+    position:absolute;
+    z-index:1;
+    width: 200vw;
+    height: 200vh;
+    top:-100vh;
+    left:-100vw;
+    background: url(img/waves.jpeg);
+    
+    filter: url("#turbulence");
+    mix-blend-mode:multiply;
+    
+}
+*/

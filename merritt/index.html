@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Timestamp</title>
+<!-- 
+    <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .message {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="message four-pm">
+      Happy four o'clock!
+    </div>
+    <div class="message five-pm">
+      <img src="">
+    </div>
+    <div class="message six-pm"></div>
+
+    <!-- loading jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- this is your javascript -->
+    <script>
+      // On page load, get the current time.
+      var current_time = new Date();
+
+      // get the current hous
+      var hours = current_time.getHours();
+
+      console.log(hours);
+
+      if (hours == 16) {
+        $(".four-pm").show();
+      }
+    </script>
+  </body>
+</html>

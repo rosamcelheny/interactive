@@ -1,0 +1,52 @@
+* {
+  background-color: rgb(212, 212, 212);
+  font-family: 'Space Grotesk', sans-serif;
+}
+.container {
+  border: 1.3px dashed black;
+  width: 90%;
+  height: 700px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.calendar-wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.image {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.image,
+.calendar-wrapper {
+    margin: 1em;
+}
+.title {
+  margin: .5em;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+}
+h1 {
+  margin: 6px;
+}
+.calendar {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 2.1em auto;
+}
+.weekday,
+.day {
+  border: .5px solid black;
+  font-size: 20px;
+  text-align: right;
+  padding-top: 4px;
+  padding-right: 8px;
+}
