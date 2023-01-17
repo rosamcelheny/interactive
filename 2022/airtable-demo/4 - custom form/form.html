@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
+    <form id="my-form">
+      <input type="text" name="title" placeholder="Enter the title"/>
+      <input type="file" id="user-image" name="image" accept="image/png, image/jpeg">
+
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="submit-message">Submitted :) </div>
     
-    <form action="#0" id="form">
+    <!-- <form action="#0" id="form">
       <div>
         <label for="title">Title</label>
         <input type="text" id="title" name="title">
@@ -24,9 +33,12 @@
       <div>
         <input type="submit" value="Submit" id="submit">
       </div>
-    </form>
+    </form> -->
+
+    <button id="button">Test button</button>
 
     <!-- load the JS files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/airtable.browser.js"></script>
     <script src="js/form.js"></script>
   </body>

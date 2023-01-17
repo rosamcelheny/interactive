@@ -71,29 +71,33 @@ function showRows(setup_clock) {
     console.log("showRows()");
     rows.forEach((row) => {
         
-        const date_published = new Date(row.fields.date);
-        // console.log(date_published);
+        // const date_published = new Date(row.fields.date);
+        // // console.log(date_published);
 
-        if (date_published.getMonth() == 0) {
-            console.log(row.fields.Title + " was published in january");
-        }
+        // if (date_published.getMonth() == 0) {
+        //     console.log(row.fields.Title + " was published in january");
+        // }
 
         // console.log(row._rawJson.createdTime);
 
         const li = document.createElement("li");
+        // how to use field ID...
         li.innerText = row.fields.Title;
         document.body.appendChild(li);
 
         // uncomment this code to add the description column from the table.
-        const div = document.createElement("div");
-        div.innerText = row.fields.Description;
-        div.classList.add("description");
-        document.body.appendChild(div);
+        // const div = document.createElement("div");
+        // div.innerText = row.fields.Description;
+        // div.classList.add("description");
+        // document.body.appendChild(div);
 
-        // uncomment this code to add the images from the table.
-        const image = document.createElement("img");
-        image.src = row.fields.icon[0].url;
-        document.body.appendChild(image);
+        // if (row.fields.icon) {
+        //     // uncomment this code to add the images from the table.
+        // const image = document.createElement("img");
+        // image.src = row.fields.icon[0].url;
+        // document.body.appendChild(image);
+        // }
+        
     });
     setup_clock();
 }

@@ -16,3 +16,7 @@
 .description {
   font-size: 11px;
 }
+
+#submit-message {
+  display: none;
+}
